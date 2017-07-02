@@ -9,6 +9,15 @@
  
      public static boolean func_193377_a()
      {
+@@ -89,7 +89,7 @@
+                         return flag2;
+                     }
+ 
+-                    filesystem = FileSystems.newFileSystem(uri, Collections.emptyMap());
++                    filesystem = net.minecraftforge.common.util.FileSystemUtils.getOrNewFileSystem(uri, Collections.emptyMap());
+                     path = filesystem.getPath("/assets/minecraft/recipes");
+                 }
+ 
 @@ -173,12 +173,14 @@
          }
      }

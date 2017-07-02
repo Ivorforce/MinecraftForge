@@ -8,3 +8,12 @@
          field_192784_c.func_192083_a(map);
  
          for (Advancement advancement : field_192784_c.func_192088_b())
+@@ -157,7 +158,7 @@
+                         return;
+                     }
+ 
+-                    filesystem = FileSystems.newFileSystem(uri, Collections.emptyMap());
++                    filesystem = net.minecraftforge.common.util.FileSystemUtils.getOrNewFileSystem(uri, Collections.emptyMap());
+                     path = filesystem.getPath("/assets/minecraft/advancements");
+                 }
+ 
